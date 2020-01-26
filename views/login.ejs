@@ -1,0 +1,33 @@
+<% include ./partials/header %>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/stylesheets/login.css">
+    </head>
+    
+    <body>
+        <div class="form-style-10">
+            <h1>Login</h1>
+            
+            <form action="/login" method="POST">
+                
+                <div class="section">Username & Password</div>
+                
+                <div class="inner-wrap">
+                    <label>Your Username <input type="text" name="username"></label>
+                    <label>Your Password <input type="password" name="password"></label>
+                </div>
+                
+                <div class="button-section">
+                     <input type="submit" name="Login!">
+                </div>
+               
+            </form>
+            
+        </div>
+    </body>
+</html>
+
+<% include ./partials/footer %>
